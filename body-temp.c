@@ -4,13 +4,17 @@
 
 int main(void)
 {
-    int i, j, k;
+    int i, j, k, l;
     srand(time(NULL));
-    for(i = 0; i < 21; i++)
+    printf("生成する数を指定\n");
+    scanf("%d", &i);
+
+    for(j = 0; j < i; j++)
     {
-        j = rand() % 10;
-        k = 36;
-        printf("%d", k);
-        printf(".%d\n", j);
+        k = rand() % 10;
+        l = 36;
+        printf("%d", l);
+        printf(".%d\n", k);
     }
+    return 0;
 }
